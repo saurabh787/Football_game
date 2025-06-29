@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Football Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="mainMenu" class="menu">
+    <h1>⚽ Pong Football</h1>
+  
+    <label for="difficultySelect">Select Difficulty:</label>
+    <select id="difficultySelect" onchange="handleDifficultyChange()">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  
+    <button onclick="startGame()">Start Game</button>
+    <button onclick="toggleMusic()">Toggle Music</button>
+    <button onclick="showScoreboard()">📊 Show Stats</button>
+
+  
+    <div class="instructions">
+      <h3>Controls</h3>
+      <p>⬆️ Arrow Up - Move Up</p>
+      <p>⬇️ Arrow Down - Move Down</p>
+      <p>⏸️ Pause/Resume - Click "Pause" button</p>
+      <p>Press 1, 2, 3 to switch difficulty anytime</p>
+    </div>
+  </div>
+
+  <div id="scoreboardPanel" style="display: none; text-align: center;">
+    <h2>🏆 Match Statistics</h2>
+    <div id="scoreboardStats" style="font-family: Arial, sans-serif; font-size: 16px;"></div>
+    <br>
+    <button onclick="returnToMenuFromScoreboard()">🔙 Back to Menu</button>
+  </div>
+  
+
+    <!-- .................... -->
+    <div id="gameContainer">
+
+      <div class="button-container">
+        <button id="pauseButton" onclick="togglePause()">Pause</button>
+        <button id="restartbutton" onclick="startGame()"  >Restart</button>
+        <button id="menuButton" onclick="returnToMenu()" style="display: none;">Main Menu</button>
+        
+      </div>
+      
+      
+      <canvas id="gameCanvas" width="800" height="400" style="display: none;"></canvas>
+
+    </div>
+      
+    <div id="gameOverScreen" class="menu" style="display: none;">
+      <h2 id="winnerText"></h2>
+      <button onclick="startGame()">Play Again</button>
+      <button onclick="returnToMenu()">Main Menu</button>
+    </div>
+    
+  
+
+  <script src="second.js"></script>
+  <script src="first.js"></script>
+  
+</body>
+</html>
+
+
+
+
+<!-- 
+Showing scoreboards or player stats
+
+Creating a "Restart Game" button
+
+Or even adding cool effects like particle goals or paddle trails... -->

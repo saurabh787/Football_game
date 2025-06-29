@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    background: #b4a1a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+/* Center the entire game block */
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+ 
+  canvas {
+    background: url('assets/images/background.jpg') no-repeat center;
+    background-size: cover;
+    border: 4px solid white;
+  }
+  
+
+
+  /* Style the difficulty section */
+  #difficultyContainer {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #difficultyContainer label {
+    color: white;
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  
+  #difficultySelect {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #222;
+    color: white;
+  }
+  
+
+
+/* pause button */
+button {
+  padding: 10px 20px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #1f8ef1, #005bea);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(145deg, #0d74d1, #0046b3);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* button container  */
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 5px; /* Space between buttons */
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #1f8ef1, #005bea);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-container button:hover {
+  background: linear-gradient(145deg, #0d74d1, #0046b3);
+  transform: scale(1.05);
+}
+
+.button-container button:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+  
+
+  .menu {
+    text-align: center;
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .menu h1 {
+    font-size: 48px;
+    color: yellow;
+  }
+  
+  .menu button, .menu select {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .instructions {
+    margin-top: 20px;
+  }
+  
+
+
+  .menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #b89a9a;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 999;
+  }
+  
+
+
+  #scoreboardPanel {
+    background: linear-gradient(to right, #1e1e2f, #2c2c44);
+    color: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  #scoreboardPanel h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffd700;
+  }
+  
+  .score-entry {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    border-left: 4px solid #ffd700;
+    transition: 0.3s ease;
+  }
+  
+  .score-entry:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.02);
+  }
+  
