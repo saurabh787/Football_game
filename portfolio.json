@@ -14,13 +14,8 @@
     "featured": true,
     "order": 1,
     "coverImage": "assets/cover.png",
-    "gallery": [
-        "assets/screenshot1.png",
-        "assets/screenshot2.png",
-        "assets/screenshot3.png"
-    ],
     "liveUrl": "https://your-deployed-football-game.com",
-    "githubUrl": "https://github.com/yourusername/football-game",
+    "githubUrl": "https://github.com/saurabh787/football-game",
     "status": "Completed",
     "year": 2025
 }
