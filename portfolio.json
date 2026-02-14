@@ -1,0 +1,26 @@
+{
+    "title": "Top-Down Football Game",
+    "slug": "football-game",
+    "shortDescription": "A dynamic top-down 2D football game with smooth controls, AI teammates, and tactical gameplay.",
+    "fullDescription": "This is a feature-rich top-down 2D football game built using HTML5 Canvas / Unity (or your tech stack). It features team selection, player movement, ball physics, AI opponents, and intuitive controls. The project showcases my ability to create game logic, animations, and responsive gameplay mechanics.",
+    "tech": [
+        "JavaScript",
+        "HTML5 Canvas",
+        "CSS3",
+        "Game Physics",
+        "AI Logic"
+    ],
+    "category": "Game Development",
+    "featured": true,
+    "order": 1,
+    "coverImage": "assets/cover.png",
+    "gallery": [
+        "assets/screenshot1.png",
+        "assets/screenshot2.png",
+        "assets/screenshot3.png"
+    ],
+    "liveUrl": "https://your-deployed-football-game.com",
+    "githubUrl": "https://github.com/yourusername/football-game",
+    "status": "Completed",
+    "year": 2025
+}
